@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>Grab.A</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container my-5">
+            <div class="row justify-content-end">
+                <div class="col-auto">
+                    <button class="btn btn-dark" data-bs-toggle="modal" href="#addProjectToggle" role="button"><i class="fa-solid fa-arrow-right"></i> Go to analytics</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" href="#addProjectToggle" role="button"><i class="fa-solid fa-plus"></i> Add new post</button>
+                </div>
+            </div>
+            <hr>
+            <div class="container my-5">
+                <div class="d-flex mb-3 justify-content-between">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="public/images/default.jpg" alt="" height="70" width="70">
+                        </div>
+                        <div class="ms-3">
+                            <p class="m-0 "><strong>ENGR. Nickerson Torres</strong></p>
+                            <p class="m-0 "><strong>Site Engineer</strong></p>
+                            <p class="m-0 text-muted">October 01, 2022</p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-ellipsis"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="table-responsive mb-3">
+                    <table class="table">
+                        <caption class="caption-top">List of Materials</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Unit</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Unit Cost</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Purpose: </strong> Construction of footing 1 and 2</p>
+                <p><strong>Hardware: </strong></td>
+                <p><strong>Name: </strong> Jen Hardware</td>
+                <p><strong>Address: </strong> 001 Indang, Cavite</td>
+                <p><strong>Contact No.: </strong> 09129461876</td>
+                <div id="postImageCarousel5" class="mt-5 carousel slide w-50 m-auto" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#postImageCarousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#postImageCarousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#postImageCarousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="public/images/1.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/2.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/3.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#postImageCarousel5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#postImageCarousel5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+            <hr>
+            <div class="container my-5">
+                <div class="d-flex mb-3 justify-content-between">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="public/images/default.jpg" alt="" height="70" width="70">
+                        </div>
+                        <div class="ms-3">
+                            <p class="m-0 "><strong>ENGR. Nickerson Torres</strong></p>
+                            <p class="m-0 "><strong>Site Engineer</strong></p>
+                            <p class="m-0 text-muted">October 01, 2022</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-ellipsis"></i></p>
+                    </div>
+                </div>
+                <div class="table-responsive mb-3">
+                    <table class="table">
+                        <caption class="caption-top">List of Materials</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Unit</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Unit Cost</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Purpose: </strong> Construction of footing 1 and 2</p>
+                <p><strong>Hardware: </strong></td>
+                <p><strong>Name: </strong> Jen Hardware</td>
+                <p><strong>Address: </strong> 001 Indang, Cavite</td>
+                <p><strong>Contact No.: </strong> 09129461876</td>
+                <div id="postImageCarousel4" class="mt-5 carousel slide w-50 m-auto" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#postImageCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#postImageCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#postImageCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="public/images/1.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/2.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/3.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#postImageCarousel4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#postImageCarousel4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+            <hr>
+            <div class="container my-5">
+                <div class="d-flex mb-3 justify-content-between">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="public/images/default.jpg" alt="" height="70" width="70">
+                        </div>
+                        <div class="ms-3">
+                            <p class="m-0 "><strong>ENGR. Nickerson Torres</strong></p>
+                            <p class="m-0 "><strong>Site Engineer</strong></p>
+                            <p class="m-0 text-muted">October 01, 2022</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-ellipsis"></i></p>
+                    </div>
+                </div>
+                <div class="table-responsive mb-3">
+                    <table class="table">
+                        <caption class="caption-top">List of Materials</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Unit</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Unit Cost</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Purpose: </strong> Construction of footing 1 and 2</p>
+                <p><strong>Hardware: </strong></td>
+                <p><strong>Name: </strong> Jen Hardware</td>
+                <p><strong>Address: </strong> 001 Indang, Cavite</td>
+                <p><strong>Contact No.: </strong> 09129461876</td>
+                <div id="postImageCarousel3" class="mt-5 carousel slide w-50 m-auto" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#postImageCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#postImageCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#postImageCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="public/images/1.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/2.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/3.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#postImageCarousel3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#postImageCarousel3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+            <hr>
+            <div class="container my-5">
+                <div class="d-flex mb-3 justify-content-between">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="public/images/default.jpg" alt="" height="70" width="70">
+                        </div>
+                        <div class="ms-3">
+                            <p class="m-0 "><strong>ENGR. Nickerson Torres</strong></p>
+                            <p class="m-0 "><strong>Site Engineer</strong></p>
+                            <p class="m-0 text-muted">October 01, 2022</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-ellipsis"></i></p>
+                    </div>
+                </div>
+                <div class="table-responsive mb-3">
+                    <table class="table">
+                        <caption class="caption-top">List of Materials</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Unit</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Unit Cost</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Purpose: </strong> Construction of footing 1 and 2</p>
+                <p><strong>Hardware: </strong></td>
+                <p><strong>Name: </strong> Jen Hardware</td>
+                <p><strong>Address: </strong> 001 Indang, Cavite</td>
+                <p><strong>Contact No.: </strong> 09129461876</td>
+                <div id="postImageCarousel2" class="mt-5 carousel slide w-50 m-auto" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#postImageCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#postImageCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#postImageCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="public/images/1.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/2.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/3.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#postImageCarousel2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#postImageCarousel2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+            <hr>
+            <div class="container my-5">
+                <div class="d-flex mb-3 justify-content-between">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="public/images/default.jpg" alt="" height="70" width="70">
+                        </div>
+                        <div class="ms-3">
+                            <p class="m-0 "><strong>ENGR. Nickerson Torres</strong></p>
+                            <p class="m-0 "><strong>Site Engineer</strong></p>
+                            <p class="m-0 text-muted">October 01, 2022</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-ellipsis"></i></p>
+                    </div>
+                </div>
+                <div class="table-responsive mb-3">
+                    <table class="table">
+                        <caption class="caption-top">List of Materials</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Unit</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Unit Cost</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Purpose: Construction of footing 1 and 2</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Purpose: </strong> Construction of footing 1 and 2</p>
+                <p><strong>Hardware: </strong></td>
+                <p><strong>Name: </strong> Jen Hardware</td>
+                <p><strong>Address: </strong> 001 Indang, Cavite</td>
+                <p><strong>Contact No.: </strong> 09129461876</td>
+                <div id="postImageCarousel1" class="mt-5 carousel slide w-50 m-auto" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#postImageCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#postImageCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#postImageCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="public/images/1.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/2.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="public/images/3.jpg" class="d-block w-100" height="500" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#postImageCarousel1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#postImageCarousel1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+            <hr>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

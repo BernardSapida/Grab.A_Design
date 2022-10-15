@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>Grab.A</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Analytics</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <h2 class="mb-3">Projects</h2>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary" data-bs-toggle="modal" href="#addProjectToggle" role="button"><i class="fa-solid fa-plus"></i> Add new project</button>
+                </div>
+            </div>
+            <hr>
+            <div class="modal fade" id="addProjectToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Project Registration</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body m-0">
+                                <form class="needs-validation" id="addProjectForm" novalidate>
+                                    <div class="mb-3">
+                                        <label for="projectName" class="form-label">Project name</label>
+                                        <input type="text" class="form-control" id="projectName" value="" placeholder="Project name" required>
+                                        <div class="invalid-feedback">Project name is required!</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="siteLocation" class="form-label">Site location</label>
+                                        <input type="text" class="form-control" id="siteLocation" value="" placeholder="Site location" required>
+                                        <div class="invalid-feedback">Site location is required!</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="totalMaterialCost" class="form-label">Total material cost (Estimate)</label>
+                                        <input type="text" class="form-control" id="totalMaterialCost" value="" placeholder="Total material cost" required>
+                                        <div class="invalid-feedback">Total material cost is required!</div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-outline-dark" data-bs-target="#addProjectToggle" data-bs-toggle="modal">Close</button>
+                                <button type="submit" class="btn btn-primary" form="addProjectForm">Add project</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="editProjectToggle" aria-hidden="true" aria-labelledby="editProjectModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="editProjectModal">Project Registration</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body m-0">
+                            <form class="needs-validation" id="addProjectForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="projectName" class="form-label">Project name</label>
+                                    <input type="text" class="form-control" id="projectName" value="" placeholder="Project name" required>
+                                    <div class="invalid-feedback">Project name is required!</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="siteLocation" class="form-label">Site location</label>
+                                    <input type="text" class="form-control" id="siteLocation" value="" placeholder="Site location" required>
+                                    <div class="invalid-feedback">Site location is required!</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="totalMaterialCost" class="form-label">Total material cost (Estimate)</label>
+                                    <input type="text" class="form-control" id="totalMaterialCost" value="" placeholder="Total material cost" required>
+                                    <div class="invalid-feedback">Total material cost is required!</div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-outline-dark" data-bs-target="#editProjectToggle" data-bs-toggle="modal">Close</button>
+                            <button type="submit" class="btn btn-primary" form="addProjectForm">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <caption class="caption-top">List of projects</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Project Name</th>
+                            <th scope="col">Site Location</th>
+                            <th scope="col">Material Cost</th>
+                            <th scope="col">View</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Project A</td>
+                            <td>Indang, Cavite</td>
+                            <td>Php 1,000,000</td>
+                            <td>
+                                <button class="btn btn-primary"><i class="fa-solid fa-gauge"></i> View Dashboard</button>
+                                <button class="btn btn-success"><i class="fa-solid fa-chart-simple"></i> View Analytics</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-dark" data-bs-toggle="modal" href="#editProjectToggle" role="button"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Project B</td>
+                            <td>Indang, Cavite</td>
+                            <td>Php 1,000,000</td>
+                            <td>
+                                <button class="btn btn-primary"><i class="fa-solid fa-gauge"></i> View Dashboard</button>
+                                <button class="btn btn-success"><i class="fa-solid fa-chart-simple"></i> View Analytics</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-dark" data-bs-toggle="modal" href="#editProjectToggle" role="button"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Project C</td>
+                            <td>Indang, Cavite</td>
+                            <td>Php 1,000,000</td>
+                            <td>
+                                <button class="btn btn-primary"><i class="fa-solid fa-gauge"></i> View Dashboard</button>
+                                <button class="btn btn-success"><i class="fa-solid fa-chart-simple"></i> View Analytics</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-dark" data-bs-toggle="modal" href="#editProjectToggle" role="button"><i class="fa-solid fa-pen-to-square"></i> Edit</button>
+                                <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <script>
+            (() => {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

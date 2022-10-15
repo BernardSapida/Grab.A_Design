@@ -1,0 +1,19 @@
+body {
+    & main {
+        & .card {
+            border-radius: 1rem;
+        }
+
+        & .img-fluid {
+            border-radius: 1rem 0 0 1rem;
+        }
+
+        & .account-registration {
+            color: hsl(235, 39%, 36%);
+
+            & a {
+                color: hsl(235, 39%, 36%);
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+body main .card {
+  border-radius: 1rem;
+}
+body main .img-fluid {
+  border-radius: 1rem 0 0 1rem;
+}
+body main .account-registration {
+  color: hsl(235deg, 39%, 36%);
+}
+body main .account-registration a {
+  color: hsl(235deg, 39%, 36%);
+}/*# sourceMappingURL=index.css.map */
