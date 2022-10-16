@@ -18,13 +18,14 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Analytics</a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-file"></i> Analytics</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">Search</button>
-                    </form>
+                    <ul class="navbar-nav me-right mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket"></i> Signout</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -39,28 +40,28 @@
                 </div>
             </div>
             <hr>
-            <div class="modal fade" id="addProjectToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal fade" id="addProjectToggle" aria-hidden="true" aria-labelledby="addModalToggle" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Project Registration</h1>
+                                <h1 class="modal-title fs-5" id="addModalToggle">Project Registration</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body m-0">
                                 <form class="needs-validation" id="addProjectForm" novalidate>
                                     <div class="mb-3">
                                         <label for="projectName" class="form-label">Project name</label>
-                                        <input type="text" class="form-control" id="projectName" value="" placeholder="Project name" required>
+                                        <input type="text" class="form-control" id="addProjectName" value="" placeholder="Project name" aria-label="Project name" required>
                                         <div class="invalid-feedback">Project name is required!</div>
                                     </div>
                                     <div class="mb-3">
                                         <label for="siteLocation" class="form-label">Site location</label>
-                                        <input type="text" class="form-control" id="siteLocation" value="" placeholder="Site location" required>
+                                        <input type="text" class="form-control" id="addSiteLocation" value="" placeholder="Site location" aria-label="Site location" required>
                                         <div class="invalid-feedback">Site location is required!</div>
                                     </div>
                                     <div class="mb-3">
                                         <label for="totalMaterialCost" class="form-label">Total material cost (Estimate)</label>
-                                        <input type="text" class="form-control" id="totalMaterialCost" value="" placeholder="Total material cost" required>
+                                        <input type="text" class="form-control" id="addTotalMaterialCost" value="" placeholder="Total material cost" aria-label="Total material cost" required>
                                         <div class="invalid-feedback">Total material cost is required!</div>
                                     </div>
                                 </form>
@@ -82,18 +83,18 @@
                         <div class="modal-body m-0">
                             <form class="needs-validation" id="addProjectForm" novalidate>
                                 <div class="mb-3">
-                                    <label for="projectName" class="form-label">Project name</label>
-                                    <input type="text" class="form-control" id="projectName" value="" placeholder="Project name" required>
+                                    <label for="editProjectName" class="form-label">Project name</label>
+                                    <input type="text" class="form-control" id="editProjectName" value="" placeholder="Project name" required>
                                     <div class="invalid-feedback">Project name is required!</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="siteLocation" class="form-label">Site location</label>
-                                    <input type="text" class="form-control" id="siteLocation" value="" placeholder="Site location" required>
+                                    <label for="editSiteLocation" class="form-label">Site location</label>
+                                    <input type="text" class="form-control" id="editSiteLocation" value="" placeholder="Site location" required>
                                     <div class="invalid-feedback">Site location is required!</div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="totalMaterialCost" class="form-label">Total material cost (Estimate)</label>
-                                    <input type="text" class="form-control" id="totalMaterialCost" value="" placeholder="Total material cost" required>
+                                    <label for="editTotalMaterialCost" class="form-label">Total material cost (Estimate)</label>
+                                    <input type="text" class="form-control" id="editTotalMaterialCost" value="" placeholder="Total material cost" required>
                                     <div class="invalid-feedback">Total material cost is required!</div>
                                 </div>
                             </form>
@@ -106,6 +107,11 @@
                 </div>
             </div>
             <div class="table-responsive">
+                <form role="search">
+                    <div class="my-2">
+                        <input class="form-control" type="search" placeholder="Search projects" aria-label="Search projects">
+                    </div>
+                </form>
                 <table class="table">
                     <caption class="caption-top">List of projects</caption>
                     <thead>

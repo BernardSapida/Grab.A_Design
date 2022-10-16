@@ -1,0 +1,8 @@
+body main {
+  position: relative;
+}
+body main #btn-newPost {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}/*# sourceMappingURL=dashboard.css.map */

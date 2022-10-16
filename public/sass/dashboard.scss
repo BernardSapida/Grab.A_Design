@@ -1,0 +1,11 @@
+body {
+    & main {
+        position: relative;
+
+        & #btn-newPost {
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+        }
+    }
+}
