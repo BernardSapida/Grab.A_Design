@@ -46,12 +46,7 @@
                                                 <div class="mb-3">
                                                     <label class="form-label" for="jobPosition">Job Position</label>
                                                     <input type="text" class="form-control" v-model="jobPosition" name="jobPosition" id="jobPosition" placeholder="Job position" required />
-                                                    <div class="invalid-feedback" v-if="!validAddress">{{errAddress}}</div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label class="form-label" for="contact">Contact Number</label>
-                                                    <input type="text" class="form-control" v-model="contact" name="contact" id="contact" placeholder="Contact Number" required />
-                                                    <div class="invalid-feedback" v-if="!validContact">{{errContact}}</div>
+                                                    <div class="invalid-feedback" v-if="!validJobPosition">{{errJobPosition}}</div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-6 col-sm-12 mb-4">
